@@ -41,16 +41,6 @@ header a {
     width: 250px;
 }
 
-#msg-1 {
-    color: #333333;
-    font-size: 15px;
-}
-
-#msg-2 {
-    color: #333333;
-    font-size: 15px;
-}
-
 input {
     border: 1px solid #cccccc;
     padding: 8px;
