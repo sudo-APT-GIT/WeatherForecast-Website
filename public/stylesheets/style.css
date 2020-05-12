@@ -53,3 +53,14 @@ button {
     color: white;
     padding: 8px;
 }
+
+#msg-2 {
+    color: darkslateblue;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+span {
+    color: #888888;
+    font-size: 15px;
+}

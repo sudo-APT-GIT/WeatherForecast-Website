@@ -55,12 +55,12 @@ app.get('/weather', (req, res) => {
         if (error) {
             return res.send({ error })
         }
-        forecast(latitude, longitude, (error, { description: desc, temperature: temp, feelslike } = {}) => {
+        forecast(latitude, longitude, (error, { description: desc, temperature: temp, feelslike, humidity } = {}) => {
             if (error) {
                 return res.send({ error })
             }
             res.send({
-                forecast: desc + ". The actual temperature is " + temp + " deg Fahrenheit but it feels like " + feelslike + " deg Fahrenheit.",
+                forecast: desc + ". The actual temperature is " + temp + " deg Fahrenheit but it feels like " + feelslike + " deg Fahrenheit. The humidity is " + humidity+"%.",
                 location,
                 address
             })
